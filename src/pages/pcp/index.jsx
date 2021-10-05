@@ -1,9 +1,9 @@
-import PokemonCard from "../../components/pokemon-list";
+import PokemonList from "../../components/PokemonList";
 
 function CardList() {
   return (
     <div className="pt-20 pb-10 w-full">
-      <PokemonCard />
+      <PokemonList />
     </div>
   );
 }

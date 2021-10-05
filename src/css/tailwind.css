@@ -3,3 +3,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "PixelArt";
+  src: url("../font/pixelart.ttf") format("truetype");
+}

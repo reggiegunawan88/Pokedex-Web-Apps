@@ -1,4 +1,4 @@
-import PokemonCard from "./pokemon-card";
+import PokemonCard from "../PokemonCard";
 
 function PokemonList() {
   return (
