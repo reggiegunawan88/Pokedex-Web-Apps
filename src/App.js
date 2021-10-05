@@ -1,15 +1,18 @@
 import "./components/FontAwesomeIcons";
-import Header from "./components/header.jsx";
-import Footer from "./components/footer.jsx";
-import CardList from "./pages/pcp/index.jsx";
+import Home from "./pages/main/index.jsx";
+import PCP from "./pages/pcp/index.jsx";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-blue-100">
-      <Header />
-      <CardList />
-      {/* <Footer /> */}
-    </div>
+    <Router>
+      <div className="min-h-screen bg-blue-100">
+        <Switch>
+          <Route path="/home" component={Home} />
+          <Route path="/pokedex" component={PCP} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
