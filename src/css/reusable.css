@@ -1,5 +1,1 @@
 /** Global reusable Tailwind styling **/
-
-.text-color {
-  @apply text-red-500;
-}
