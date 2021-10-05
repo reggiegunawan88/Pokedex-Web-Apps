@@ -1,7 +1,11 @@
 import "./components/FontAwesomeIcons";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Home from "./pages/main/index.jsx";
 import PCP from "./pages/pcp/index.jsx";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import PDP from "./pages/pdp/index.jsx";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Fragment } from "react";
 
 function App() {
   return (
@@ -9,7 +13,12 @@ function App() {
       <div className="min-h-screen bg-blue-100">
         <Switch>
           <Route path="/home" component={Home} />
-          <Route path="/pokedex" component={PCP} />
+          <Fragment>
+            <Header />
+            <Route path="/pokedex" component={PCP} />
+            <Route path="/pokemon" component={PDP} />
+            <Footer />
+          </Fragment>
         </Switch>
       </div>
     </Router>
