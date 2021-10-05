@@ -1,5 +1,5 @@
 module.exports = {
-  // mode: "jit",
+  mode: "jit",
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -206,6 +206,7 @@ module.exports = {
       96: "24rem",
       97: "26.5rem",
       105: "29.75rem",
+      110: "31.25rem",
     },
     borderWidth: {
       default: "1px",
@@ -225,6 +226,7 @@ module.exports = {
       system: ["Georgia", "Times New Roman", "Times", "serif"],
       sans: ["PT Sans", "Arial", "Verdana", "Helvetica", "sans-serif"],
       chronicle: ["Chronicle Display", "serif"],
+      pixelart: ["PixelArt"],
     },
     fontSize: {
       xxs: "0.625rem", // 10px
