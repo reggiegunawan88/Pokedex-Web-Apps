@@ -1,12 +1,14 @@
+import "./components/FontAwesomeIcons";
 import Header from "./components/header.jsx";
 import Footer from "./components/footer.jsx";
+import CardList from "./pages/pcp/index.jsx";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-blue-100">
       <Header />
-      <p className="text-color">Hello World</p>
-      <Footer />
+      <CardList />
+      {/* <Footer /> */}
     </div>
   );
 }
