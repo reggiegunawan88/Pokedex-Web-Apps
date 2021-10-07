@@ -12,8 +12,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-blue-100">
         <Switch>
-          <Route path="/home" component={Home} />
-          <Redirect from="/" to="/home" />
+          <Route exact path="/" component={Home} />
           <Fragment>
             <Header />
             <Route path="/pokedex" component={PCP} />
