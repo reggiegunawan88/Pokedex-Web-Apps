@@ -22,7 +22,7 @@ function PokemonList() {
       </div>
 
       {/* pokemon list grid */}
-      <div className="laptopM:bg-white laptopM:rounded-lg laptopM:shadow-lg laptopM:p-7 laptopM:mx-5 laptopM:h-110">
+      <div className="laptopM:bg-white laptopM:rounded-lg laptopM:shadow-lg laptopM:p-7 laptopM:mx-5 laptopM:h-auto">
         <div className="flex flex-row w-full gap-x-2 justify-center px-4 items-center">
           <hr className="border-default border-pokedexBlue w-full" />
           <p className="font-sans font-bold text-pokedexBlue mx-2 whitespace-nowrap">Pokemon List</p>
@@ -50,13 +50,9 @@ function PokemonList() {
           <PokemonCard />
           <PokemonCard />
           <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          {/* <div className="text-center mt-6 mx-auto">
+          <div className="col-span-4 mt-6 mx-auto">
             <button className="bg-detailBtn font-sans font-bold text-white px-7 py-2 rounded-full">Load More</button>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
