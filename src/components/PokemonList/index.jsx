@@ -17,7 +17,7 @@ function PokemonList() {
         </div>
         {/* btn details */}
         <div className="self-center mt-6 tablet:mt-20">
-          <button className="bg-detailBtn font-sans font-bold text-white px-7 py-2 rounded-full">DETAIL</button>
+          <button className="bg-redBtn font-sans font-bold text-white px-7 py-2 rounded-full">DETAIL</button>
         </div>
       </div>
 
@@ -51,7 +51,7 @@ function PokemonList() {
           <PokemonCard />
           <PokemonCard />
           <div className="col-span-4 mt-6 mx-auto">
-            <button className="bg-detailBtn font-sans font-bold text-white px-7 py-2 rounded-full">Load More</button>
+            <button className="bg-redBtn font-sans font-bold text-white px-7 py-2 rounded-full">Load More</button>
           </div>
         </div>
       </div>

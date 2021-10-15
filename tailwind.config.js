@@ -33,7 +33,7 @@ module.exports = {
       black: "#000",
 
       /* custom color */
-      detailBtn: "#EB5757",
+      redBtn: "#EB5757",
       pokedexBlue: "#5169BF",
 
       blue: {

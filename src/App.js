@@ -17,8 +17,8 @@ function App() {
             <Header />
             <Route path="/pokedex" component={PCP} />
             <Route path="/pokemon" component={PDP} />
-            <Footer />
           </Fragment>
+          <Footer />
         </Switch>
       </div>
     </Router>
