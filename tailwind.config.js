@@ -1,9 +1,13 @@
 module.exports = {
-  mode: "jit",
+  // mode: "jit",
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        "pokedex-bg": "url('../img/pokedex-menu-bg.png')",
+      }),
+    },
     screens: {
       mobileS: "360px",
       // => @media (min-width: 360px) { ... }
