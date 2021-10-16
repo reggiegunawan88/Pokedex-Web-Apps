@@ -1,7 +1,50 @@
+import React, { useState, useEffect } from "react";
 import PokemonCard from "../PokemonCard";
+import LazyLoading from "../PokemonCard/lazyLoading";
 import { Link } from "react-router-dom";
+import { useQuery } from "@apollo/client";
+import { LOAD_POKEMONS } from "../GraphQL/queries";
 
 function PokemonList() {
+  const [pokemonList, setPokemonList] = useState([]);
+  const [itemsPerPage, setItemsPerPage] = useState(20);
+  const [currentPokemon, setCurrentPokemon] = useState([]);
+
+  // pokemon list limit
+  const gqlVar = {
+    limit: 249,
+    offset: 1,
+  };
+  // get pokemon data list with gql query
+  const { error, loading, data } = useQuery(LOAD_POKEMONS, {
+    variables: gqlVar,
+  });
+
+  useEffect(() => {
+    if (data) {
+      setPokemonList(data.pokemons.results);
+    }
+  }, [data]);
+
+  const loadMore = () => {
+    setItemsPerPage(itemsPerPage + 20);
+  };
+
+  // lazy load rendering, prevent bad CLS score
+  const renderPokemonList = () => {
+    const lists = [];
+    if (loading) {
+      for (let i = 0; i < itemsPerPage; i++) {
+        lists.push(<LazyLoading key={i} />);
+      }
+    } else {
+      pokemonList.slice(0, itemsPerPage).map((pokemon, i) => {
+        lists.push(<PokemonCard key={i} data={pokemon} />);
+      });
+    }
+    return lists;
+  };
+
   return (
     <div className="flex flex-col gap-y-7 laptopM:grid laptopM:grid-flow-col-dense laptopM:mt-10">
       {/* pokemon thumbnail */}
@@ -31,28 +74,11 @@ function PokemonList() {
         </div>
         {/* pokemon list */}
         <div className="flex overflow-x-auto whitespace-nowrap gap-x-3 mx-4 laptopM:grid laptopM:grid-cols-4 laptopM:h-97">
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
+          {renderPokemonList()}
           <div className="col-span-4 mt-6 mx-auto">
-            <button className="bg-redBtn font-sans font-bold text-white px-7 py-2 rounded-full">Load More</button>
+            <button onClick={loadMore} className="bg-redBtn font-sans font-bold text-white px-7 py-2 rounded-full">
+              Load More
+            </button>
           </div>
         </div>
       </div>

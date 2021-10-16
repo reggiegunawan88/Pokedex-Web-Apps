@@ -1,7 +1,7 @@
-function PokemonCard() {
+function PokemonCard(props) {
   return (
-    <div className="flex-shrink-0 bg-green-50 p-3 rounded mt-3 h-[fit-content]">
-      <img className="w-15 h-15 mx-auto" alt="bulbasaur" src="/assets/bulbasaur.png" />
+    <div className="flex-shrink-0 bg-blue-200 p-3 rounded mt-3 h-[fit-content] cursor-pointer">
+      <img className="w-20 h-20 mx-auto" alt="bulbasaur" src={props.data.image} />
     </div>
   );
 }
