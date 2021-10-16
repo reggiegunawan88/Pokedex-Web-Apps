@@ -1,4 +1,5 @@
 import PokemonCard from "../PokemonCard";
+import { Link } from "react-router-dom";
 
 function PokemonList() {
   return (
@@ -16,9 +17,9 @@ function PokemonList() {
           <img alt="bulbasaur" src="/assets/bulbasaur.png" />
         </div>
         {/* btn details */}
-        <div className="self-center mt-6 tablet:mt-20">
+        <Link to="/pokemon" className="self-center mt-6 tablet:mt-20">
           <button className="bg-redBtn font-sans font-bold text-white px-7 py-2 rounded-full">DETAIL</button>
-        </div>
+        </Link>
       </div>
 
       {/* pokemon list grid */}
