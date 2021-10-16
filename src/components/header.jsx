@@ -1,11 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useHistory } from "react-router-dom";
 
 function Header() {
+  let history = useHistory();
+
   return (
     <div className="fixed top-0 w-full py-4 bg-pokedexBlue text-center">
       <div className="flex flex-row items-center mx-5 justify-between text-white">
         {/* back button */}
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row items-center" onClick={() => history.goBack()}>
           <FontAwesomeIcon icon="arrow-left" />
           <p className="font-sans font-bold mx-4 hidden laptop:block">Back</p>
         </div>
