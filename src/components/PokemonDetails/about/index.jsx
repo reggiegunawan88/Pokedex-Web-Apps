@@ -15,7 +15,7 @@ function PokemonStatus() {
 
   const renderAbout = () => {
     if (pokemon.length === 0) {
-      // show data
+      // skeleton
       return (
         <div className="flex flex-col gap-y-4">
           <div className="w-1/2 h-3 bg-grey-40 animate-pulse rounded-full"></div>
@@ -25,7 +25,7 @@ function PokemonStatus() {
         </div>
       );
     } else {
-      // skeleton loading
+      // show data
       return (
         <div className="flex flex-col gap-y-1">
           <p>{hashedPokemonID(pokemon.id)}</p>

@@ -4,6 +4,7 @@ import { PokemonContext } from "../PokemonList";
 function PokemonCard(props) {
   const contextValue = useContext(PokemonContext);
 
+  // call func to context parent
   const choosePokemon = () => {
     contextValue.setPokemonThumbnail(props.data);
     contextValue.setPokemonID(props.idx + 1);

@@ -50,7 +50,7 @@ function Thumbnail() {
   };
 
   return (
-    <div className="flex flex-col font-sans items-center laptopM:order-2">
+    <div className="flex flex-col font-sans items-center self-center laptopM:order-2">
       {/* pokemon name and ID */}
       {renderName()}
       {renderID()}

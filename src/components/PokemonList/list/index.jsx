@@ -25,11 +25,11 @@ function PokemonList() {
   };
 
   return (
-    <div className="flex overflow-x-auto whitespace-nowrap gap-x-3 mx-2 laptopM:grid laptopM:grid-cols-4 laptopM:h-110">
+    <div className="flex overflow-x-auto whitespace-nowrap gap-x-3 mx-6 laptopM:grid laptopM:grid-cols-4 laptopM:h-110">
       {renderPokemonList()}
-      <div className="col-span-4 mt-6 mx-auto">
-        <button onClick={loadMore} className="bg-redBtn font-sans font-bold text-white px-7 py-2 rounded-full">
-          Load More
+      <div className="col-span-4 mt-3 mx-auto">
+        <button onClick={loadMore} className="font-sans font-bold text-pokedexBlue border-2 border-pokedexBlue shadow-lg p-5 rounded h-full">
+          <p>Load More</p>
         </button>
       </div>
     </div>
