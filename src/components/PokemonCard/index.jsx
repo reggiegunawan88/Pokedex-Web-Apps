@@ -10,7 +10,7 @@ function PokemonCard(props) {
   };
 
   return (
-    <div onClick={choosePokemon} className="flex-shrink-0 bg-gray-50 p-3 rounded mt-3 h-[fit-content] cursor-pointer">
+    <div onClick={choosePokemon} className="flex-shrink-0 bg-pokemonCard p-3 rounded mt-3 h-[fit-content] cursor-pointer">
       <img className="w-24 h-24 mx-auto" alt="bulbasaur" src={props.data.image} />
     </div>
   );

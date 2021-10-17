@@ -38,6 +38,7 @@ module.exports = {
       /* custom color */
       redBtn: "#EB5757",
       pokedexBlue: "#5169BF",
+      pokemonCard: "#B3C3FF",
 
       blue: {
         100: "#F1F9FC",
