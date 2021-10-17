@@ -1,6 +1,7 @@
-import { useEffect, useState, useContext } from "react/cjs/react.development";
+import React, { useEffect, useState, useContext } from "react";
 import { PokemonDetailsContext } from "..";
 import { hashedPokemonID } from "../../utils/helper/helper";
+import PokemonStats from "./stats";
 
 function PokemonStatus() {
   const [pokemon, setPokemon] = useState([]);
@@ -12,8 +13,7 @@ function PokemonStatus() {
     }
   }, [contextValue.pokemon]);
 
-  const renderStatus = () => {
-    console.log(pokemon);
+  const renderAbout = () => {
     if (pokemon.length === 0) {
       // show data
       return (
@@ -26,7 +26,6 @@ function PokemonStatus() {
       );
     } else {
       // skeleton loading
-      console.log(pokemon.abilities);
       return (
         <div className="flex flex-col gap-y-1">
           <p>{hashedPokemonID(pokemon.id)}</p>
@@ -58,30 +57,15 @@ function PokemonStatus() {
             <p>Weight</p>
             <p>Abilities</p>
           </div>
-          {renderStatus()}
+          {renderAbout()}
         </div>
       </div>
-      {/* Pokemon moves */}
+      {/* Pokemon stats */}
       <div className="flex flex-col">
         <div className="w-full bg-blue-100 px-2 rounded">
           <p className="font-minecraft text-blue-500 text-sm font-bold py-1 tablet:text-xl">Stats</p>
         </div>
-        <div className="font-sans grid grid-cols-2 px-2 mt-2">
-          <div className="flex flex-col gap-y-1 font-bold">
-            <p>HP</p>
-            <p>Attack</p>
-            <p>Defence</p>
-            <p>Special-ATK</p>
-            <p>Special-DEF</p>
-            <p>Speed</p>
-          </div>
-          <div className="flex flex-col gap-y-1">
-            <p>Spesies</p>
-            <p>Height</p>
-            <p>Weight</p>
-            <p>Abilities</p>
-          </div>
-        </div>
+        <PokemonStats />
       </div>
     </div>
   );

@@ -13,7 +13,6 @@ export const hashedPokemonID = (id) => {
 };
 
 /**
- *
  * ex input: /pokemon/bulbasaur
  * @returns bulbasaur
  */

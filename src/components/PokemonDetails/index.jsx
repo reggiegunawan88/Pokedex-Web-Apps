@@ -4,7 +4,7 @@ import PokemonProfile from "./profile";
 import { useLocation } from "react-router";
 import { getLastURLPath } from "../utils/helper/helper";
 import { POKEMON_DETAILS } from "../utils/GraphQL/queries";
-import PokemonStatus from "./status";
+import PokemonStatus from "./about";
 
 export const PokemonDetailsContext = createContext();
 
