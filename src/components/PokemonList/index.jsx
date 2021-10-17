@@ -2,7 +2,7 @@ import React, { useState, useEffect, createContext } from "react";
 import List from "./list";
 import Thumbnail from "./thumbnail";
 import { useQuery } from "@apollo/client";
-import { LOAD_POKEMONS } from "../GraphQL/queries";
+import { LOAD_POKEMONS } from "../utils/GraphQL/queries";
 
 export const PokemonContext = createContext();
 

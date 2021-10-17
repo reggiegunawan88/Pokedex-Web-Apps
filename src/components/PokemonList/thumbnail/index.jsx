@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from "react";
 import { PokemonContext } from "../index";
 import { Link } from "react-router-dom";
-import { hashedPokemonID } from "../../helper/helper";
+import { hashedPokemonID } from "../../utils/helper/helper";
 
 function Thumbnail() {
   const contextValue = useContext(PokemonContext); // get pokemon data from parent context
@@ -20,14 +20,14 @@ function Thumbnail() {
     if (isLoading) {
       return <div className="h-10 w-1/2 rounded bg-grey-40 animate-pulse"></div>;
     } else {
-      return <p className="font-bold text-3xl capitalize">{pokemon.name}</p>;
+      return <p className="font-bold font-minecraft text-3xl capitalize">{pokemon.name}</p>;
     }
   };
   const renderID = () => {
     if (isLoading) {
       return <div className="h-5 w-1/4 rounded bg-grey-40 animate-pulse mt-2"></div>;
     } else {
-      return <p className="text-lg mt-2">{pokemonID}</p>;
+      return <p className="text-lg font-minecraft mt-2">{pokemonID}</p>;
     }
   };
   const renderImage = () => {
@@ -41,7 +41,7 @@ function Thumbnail() {
     if (isLoading) {
       return <div className="w-31 h-10 mt-2 rounded-full bg-grey-40 animate-pulse"></div>;
     } else {
-      return <button className="bg-redBtn font-sans font-bold text-white px-7 py-2 rounded-full">DETAIL</button>;
+      return <button className="bg-redBtn font-minecraft font-bold text-xl text-white px-7 py-2 rounded-full">DETAIL</button>;
     }
   };
 

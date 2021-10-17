@@ -1,4 +1,4 @@
-import "./components/FontAwesomeIcons";
+import "./components/utils/FontAwesomeIcons";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/main/index.jsx";
@@ -6,7 +6,7 @@ import PCP from "./pages/pcp/index.jsx";
 import PDP from "./pages/pdp/index.jsx";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Fragment } from "react";
-import { client } from "./components/GraphQL/setup";
+import { client } from "./components/utils/GraphQL/setup";
 import { ApolloProvider } from "@apollo/client";
 
 function App() {
