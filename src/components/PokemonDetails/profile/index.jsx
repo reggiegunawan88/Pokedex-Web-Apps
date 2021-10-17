@@ -24,7 +24,7 @@ function PokemonProfile() {
     } else {
       pokemon.types.map((item, i) =>
         elements.push(
-          <p key={i} className="bg-green-200 text-xs px-3 py-1 rounded-full font-bold uppercase">
+          <p key={i} className={`bg-${item.type.name} text-white text-xs tablet:text-sm px-3 py-1 rounded-full font-bold uppercase`}>
             {item.type.name}
           </p>
         )
