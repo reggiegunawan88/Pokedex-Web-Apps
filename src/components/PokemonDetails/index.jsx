@@ -36,7 +36,7 @@ function PokemonDetails() {
           </div>
         </div>
         <div className="w-full text-center mt-6">
-          <button>
+          <button className="transform transition duration-300 hover:scale-125">
             <img alt="pokeball-catch" src="/assets/pokeball-catch.png" className="mx-auto" />
             <p className="font-minecraft text-xl font-bold text-redBtn">CATCH</p>
           </button>
