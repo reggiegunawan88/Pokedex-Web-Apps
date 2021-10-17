@@ -41,7 +41,11 @@ function Thumbnail() {
     if (isLoading) {
       return <div className="w-31 h-10 mt-2 rounded-full bg-grey-40 animate-pulse"></div>;
     } else {
-      return <button className="bg-redBtn font-minecraft font-bold text-xl text-white px-7 py-2 rounded-full">DETAIL</button>;
+      return (
+        <Link to={`/pokemon/${pokemon.name}`}>
+          <div className="self-center bg-redBtn font-minecraft font-bold text-xl text-white px-7 py-2 rounded-full">DETAIL</div>
+        </Link>
+      );
     }
   };
 
@@ -53,9 +57,7 @@ function Thumbnail() {
       {/* img */}
       <div className="self-center mt-10">{renderImage()}</div>
       {/* btn details */}
-      <Link to="/pokemon" className="self-center">
-        {renderBtn()}
-      </Link>
+      {renderBtn()}
     </div>
   );
 }

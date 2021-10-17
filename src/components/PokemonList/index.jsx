@@ -11,7 +11,7 @@ function PokemonList() {
   const [pokemonThumbnail, setPokemonThumbnail] = useState([]);
   const [pokemonID, setPokemonID] = useState(1);
 
-  // pokemon list limit
+  // pokemon list -> 1st gen only
   const gqlVar = {
     limit: 249,
     offset: 0,

@@ -11,3 +11,12 @@ export const hashedPokemonID = (id) => {
   }
   return result;
 };
+
+/**
+ *
+ * ex input: /pokemon/bulbasaur
+ * @returns bulbasaur
+ */
+export const getLastURLPath = (url) => {
+  return url.substring(url.lastIndexOf("/") + 1);
+};

@@ -19,7 +19,7 @@ function App() {
             <Fragment>
               <Header />
               <Route path="/pokedex" component={PCP} />
-              <Route path="/pokemon" component={PDP} />
+              <Route path="/pokemon/:name" component={PDP} />
             </Fragment>
             <Footer />
           </Switch>
