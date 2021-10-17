@@ -4,7 +4,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
+      fontFamily: {
+        minecraft: ["Minecraft"],
+      },
+      backgroundImage: () => ({
         "pokedex-bg": "url('../img/pokedex-menu-bg.png')",
       }),
     },
