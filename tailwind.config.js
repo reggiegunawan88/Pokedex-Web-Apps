@@ -15,7 +15,7 @@ module.exports = {
       mobileS: "360px",
       // => @media (min-width: 360px) { ... }
       mobileM: "480px",
-      // => @media (min-width: 425px) { ... }
+      // => @media (min-width: 480px) { ... }
       mobileL: "640px",
       // => @media (min-width: 640px) { ... }
       tablet: "768px",
@@ -39,6 +39,26 @@ module.exports = {
       redBtn: "#EB5757",
       pokedexBlue: "#5169BF",
       pokemonCard: "#B3C3FF",
+
+      /* custom hex colors for each pokemon type */
+      normal: "#A8A77A",
+      fire: "#EE8130",
+      water: "#6390F0",
+      electric: "#F7D02C",
+      grass: "#7AC74C",
+      ice: "#96D9D6",
+      fighting: "#C22E28",
+      poison: "#A33EA1",
+      ground: "#E2BF65",
+      flying: "#A98FF3",
+      psychic: "#F95587",
+      bug: "#A6B91A",
+      rock: "#B6A136",
+      ghost: "#735797",
+      dragon: "#6F35FC",
+      dark: "#705746",
+      steel: "#B7B7CE",
+      fairy: "#D685AD",
 
       blue: {
         100: "#F1F9FC",
@@ -92,10 +112,6 @@ module.exports = {
       },
 
       white: "#fff",
-      "white-citrine-darker": "#f5e4bb",
-      "white-citrine-dark": "#f7e9c8",
-      "white-citrine": "#faf2de",
-      "white-citrine-light": "#fdfbf4",
 
       blue: {
         100: "#E1F0FF",
@@ -106,8 +122,6 @@ module.exports = {
         600: "#0356A8",
         700: "#023B73",
       },
-      // nama key dobel, sementara dikomen dulu sampai warna lama dihapus
-      // 200-600 ada kesamaan dengan gray 50-600, akan di cek next task
       grey: {
         30: "#DDDDDD",
         40: "#999999",
@@ -234,7 +248,6 @@ module.exports = {
       system: ["Georgia", "Times New Roman", "Times", "serif"],
       sans: ["PT Sans", "Arial", "Verdana", "Helvetica", "sans-serif"],
       chronicle: ["Chronicle Display", "serif"],
-      pixelart: ["PixelArt"],
     },
     fontSize: {
       xxs: "0.625rem", // 10px
