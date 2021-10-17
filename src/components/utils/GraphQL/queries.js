@@ -7,8 +7,6 @@ export const LOAD_POKEMONS = gql`
       count
       next
       previous
-      status
-      message
       results {
         url
         name
@@ -23,6 +21,9 @@ export const POKEMON_DETAILS = gql`
     pokemon(name: $name) {
       id
       name
+      height
+      weight
+      message
       abilities {
         ability {
           name
@@ -38,8 +39,18 @@ export const POKEMON_DETAILS = gql`
           name
         }
       }
-      message
-      status
+      sprites {
+        front_default
+        front_female
+        front_shiny
+      }
+      stats {
+        effort
+        base_stat
+        stat {
+          name
+        }
+      }
     }
   }
 `;
