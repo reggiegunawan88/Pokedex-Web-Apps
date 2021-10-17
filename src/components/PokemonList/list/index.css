@@ -2,11 +2,12 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  visibility: hidden;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
+  visibility: hidden;
   border-radius: 10px;
   margin: 10px 5px 5px 5px;
   padding: 20px;
@@ -14,6 +15,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
+  visibility: hidden;
   background: lightgrey;
   border-radius: 10px;
 }
