@@ -1,0 +1,26 @@
+/* custom css for animation */
+
+.slide {
+  animation: slide-in 0.2s reverse;
+}
+.slide-leave {
+  animation: slide-out 0.2s reverse;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
