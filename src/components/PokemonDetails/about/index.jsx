@@ -5,13 +5,13 @@ import PokemonStats from "./stats";
 
 function PokemonStatus() {
   const [pokemon, setPokemon] = useState([]);
-  const contextValue = useContext(PokemonDetailsContext);
+  const ctxValue = useContext(PokemonDetailsContext);
 
   useEffect(() => {
-    if (contextValue.pokemon) {
-      setPokemon(contextValue.pokemon);
+    if (ctxValue.pokemon) {
+      setPokemon(ctxValue.pokemon);
     }
-  }, [contextValue.pokemon]);
+  }, [ctxValue.pokemon]);
 
   const renderAbout = () => {
     if (pokemon.length === 0) {

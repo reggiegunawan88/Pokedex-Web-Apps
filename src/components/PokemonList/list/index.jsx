@@ -5,7 +5,7 @@ import { PokemonContext } from "../index";
 import "./index.css";
 
 function PokemonList() {
-  const contextValue = useContext(PokemonContext);
+  const ctxValue = useContext(PokemonContext);
   const [itemsPerPage, setItemsPerPage] = useState(20);
 
   // load more btn func
@@ -14,12 +14,12 @@ function PokemonList() {
   // lazy load rendering, prevent bad CLS score
   const renderPokemonList = () => {
     const lists = [];
-    if (contextValue.loading) {
+    if (ctxValue.loading) {
       for (let i = 0; i < itemsPerPage; i++) {
         lists.push(<LazyLoading key={i} />);
       }
     } else {
-      contextValue.pokemonList.slice(0, itemsPerPage).map((pokemon, i) => lists.push(<PokemonCard key={i} data={pokemon} idx={i} />));
+      ctxValue.pokemonList.slice(0, itemsPerPage).map((pokemon, i) => lists.push(<PokemonCard key={i} data={pokemon} idx={i} />));
     }
     return lists;
   };

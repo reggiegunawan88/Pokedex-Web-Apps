@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 import { hashedPokemonID } from "../../utils/helper/helper";
 
 function Thumbnail() {
-  const contextValue = useContext(PokemonContext); // get pokemon data from parent context
+  const ctxValue = useContext(PokemonContext); // get pokemon data from parent context
   const [pokemon, setPokemon] = useState([]);
   const [pokemonID, setPokemonID] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    setPokemon(contextValue.pokemonThumbnail);
-    setPokemonID(hashedPokemonID(contextValue.pokemonID));
-    setIsLoading(contextValue.loading);
-  }, [contextValue]);
+    setPokemon(ctxValue.pokemonThumbnail);
+    setPokemonID(hashedPokemonID(ctxValue.pokemonID));
+    setIsLoading(ctxValue.loading);
+  }, [ctxValue]);
 
   /* progressive rendering -> prevent bad CLS */
   const renderName = () => {

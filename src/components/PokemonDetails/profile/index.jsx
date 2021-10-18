@@ -2,14 +2,14 @@ import React, { useState, useEffect, useContext } from "react";
 import { PokemonDetailsContext } from "../index";
 
 function PokemonProfile() {
-  const contextValue = useContext(PokemonDetailsContext);
+  const ctxValue = useContext(PokemonDetailsContext);
   const [pokemon, setPokemon] = useState([]);
 
   useEffect(() => {
-    if (contextValue.pokemon) {
-      setPokemon(contextValue.pokemon);
+    if (ctxValue.pokemon) {
+      setPokemon(ctxValue.pokemon);
     }
-  }, [contextValue.pokemon]);
+  }, [ctxValue.pokemon]);
 
   /* progressive rendering */
   const renderTypes = () => {
@@ -24,7 +24,7 @@ function PokemonProfile() {
     } else {
       pokemon.types.map((item, i) =>
         elements.push(
-          <p key={i} className={`bg-${item.type.name} text-white text-xs tablet:text-sm px-3 py-1 rounded-full font-bold uppercase`}>
+          <p key={i} className={`bg-grey-40 text-white text-xs tablet:text-sm px-3 py-1 rounded-full font-bold uppercase`}>
             {item.type.name}
           </p>
         )
@@ -44,7 +44,7 @@ function PokemonProfile() {
     <div className="grid grid-cols-2 tablet:grid-cols-1">
       {/* pokemon name, types */}
       <div className="flex flex-col text-left place-self-center tablet:gap-y-2 tablet:text-center">
-        {!contextValue.loading ? <p className="font-bold font-minecraft text-2xl tablet:text-3xl capitalize">{pokemon.name}</p> : <div className="h-5 w-full rounded bg-grey-40 animate-pulse"></div>}
+        {!ctxValue.loading ? <p className="font-bold font-minecraft text-2xl tablet:text-3xl capitalize">{pokemon.name}</p> : <div className="h-5 w-full rounded bg-grey-40 animate-pulse"></div>}
         <div className="flex flex-row gap-x-3 mt-2 justify-center">{renderTypes()}</div>
       </div>
       {renderImg()}
