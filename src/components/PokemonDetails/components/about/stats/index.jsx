@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { PokemonDetailsContext } from "../../..";
+import { PokemonDetailsContext } from "pages/pdp/index";
 import Meterbar from "../meterbar";
 
 function PokemonStats() {

@@ -1,6 +1,6 @@
-import PokemonList from "../../components/PokemonList";
+import PokemonList from "components/PokemonList";
 
-function CardList() {
+function ListPage() {
   return (
     <div className="pt-20 pb-10 w-full">
       <PokemonList />
@@ -8,4 +8,4 @@ function CardList() {
   );
 }
 
-export default CardList;
+export default ListPage;

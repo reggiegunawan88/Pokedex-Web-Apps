@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
-import { PokemonDetailsContext } from "../..";
-import { hashedPokemonID } from "../../../utils/helper/helper";
+import { PokemonDetailsContext } from "pages/pdp/index";
+import { hashedPokemonID } from "components/utils/helper/helper";
 import PokemonStats from "./stats";
 
 function PokemonAbout() {
