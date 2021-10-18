@@ -1,4 +1,5 @@
 module.exports = {
+  // mode: "jit",
   purge: {
     content: ["./src/pages/**/*.{js,jsx,ts,tsx}", "./src/components/**/*.{js,jsx,ts,tsx}", "./src/components/**/**/*.{js,jsx,ts,tsx}"],
   },
@@ -40,6 +41,8 @@ module.exports = {
       redBtn: "#EB5757",
       pokedexBlue: "#5169BF",
       pokemonCard: "#B3C3FF",
+      snackbarGreen: "#27AE60",
+      snackbarRed: "#D96262",
 
       /* custom hex colors for each pokemon type */
       normal: "#A8A77A",
