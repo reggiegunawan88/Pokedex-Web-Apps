@@ -5,6 +5,8 @@ import { useLocation } from "react-router";
 import { getLastURLPath } from "../utils/helper/helper";
 import { POKEMON_DETAILS } from "../utils/GraphQL/queries";
 import PokemonStatus from "./about";
+import SnackbarSuccess from "../snackbar/success";
+import SnackbarFailed from "../snackbar/failed";
 
 export const PokemonDetailsContext = createContext();
 
@@ -28,6 +30,8 @@ function PokemonDetails() {
 
   return (
     <PokemonDetailsContext.Provider value={{ pokemon, loading }}>
+      {/* <SnackbarSuccess /> */}
+      <SnackbarFailed />
       <div className="h-full max-w-xl mx-auto">
         <div className="flex flex-col bg-white mx-4 rounded-lg shadow-md px-4 py-3">
           <div className="grid grid-cols-1 gap-y-4 tablet:grid-cols-2">
