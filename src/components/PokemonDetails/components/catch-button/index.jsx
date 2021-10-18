@@ -1,15 +1,17 @@
 import { useContext } from "react";
-import { PokemonDetailsContext } from "pages/pdp/index";
+import { userInteractionContext } from "components/PokemonDetails";
 
 function CatchButton() {
-  const ctxValue = useContext(PokemonDetailsContext);
+  const interaction = useContext(userInteractionContext);
+
+  // 50% probability chance
   const catchPokemon = () => {
     const chance = Math.random();
     if (chance < 0.5) {
-      console.log("failed");
+      interaction.openSnackbarFailed();
     } else {
-      console.log("success");
-      console.log("pokemon:" + ctxValue.pokemon.name);
+      interaction.closeSnackbarFailed();
+      interaction.openModal();
     }
   };
   return (

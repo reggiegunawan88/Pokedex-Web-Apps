@@ -4,7 +4,6 @@ import { PokemonDetailsContext } from "pages/pdp/index";
 function PokemonProfile() {
   const ctxValue = useContext(PokemonDetailsContext);
   const [pokemon, setPokemon] = useState([]);
-  console.log(ctxValue);
 
   useEffect(() => {
     if (ctxValue.pokemon) {
