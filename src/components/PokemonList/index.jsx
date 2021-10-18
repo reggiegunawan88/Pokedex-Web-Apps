@@ -1,6 +1,6 @@
 import React, { useState, useEffect, createContext } from "react";
-import List from "./list";
-import Thumbnail from "./thumbnail";
+import List from "./components/list";
+import Thumbnail from "./components/thumbnail";
 import { useQuery } from "@apollo/client";
 import { LOAD_POKEMONS } from "../utils/GraphQL/queries";
 

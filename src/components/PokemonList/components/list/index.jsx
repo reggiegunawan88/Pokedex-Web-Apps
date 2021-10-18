@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
-import LazyLoading from "../../PokemonCard/lazyLoading";
-import PokemonCard from "../../PokemonCard";
-import { PokemonContext } from "../index";
+import LazyLoading from "../../../PokemonCard/components/lazyLoading";
+import PokemonCard from "../../../PokemonCard";
+import { PokemonContext } from "../../index";
 import "./index.css";
 
 function PokemonList() {

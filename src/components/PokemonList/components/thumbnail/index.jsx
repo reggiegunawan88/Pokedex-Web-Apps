@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from "react";
-import { PokemonContext } from "../index";
+import { PokemonContext } from "../../index";
 import { Link } from "react-router-dom";
-import { hashedPokemonID } from "../../utils/helper/helper";
+import { hashedPokemonID } from "../../../utils/helper/helper";
 
 function Thumbnail() {
   const ctxValue = useContext(PokemonContext); // get pokemon data from parent context
