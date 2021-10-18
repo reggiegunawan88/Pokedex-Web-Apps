@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useContext } from "react";
-import { PokemonDetailsContext } from "..";
-import { hashedPokemonID } from "../../utils/helper/helper";
+import { PokemonDetailsContext } from "../..";
+import { hashedPokemonID } from "../../../utils/helper/helper";
 import PokemonStats from "./stats";
 
-function PokemonStatus() {
+function PokemonAbout() {
   const [pokemon, setPokemon] = useState([]);
   const ctxValue = useContext(PokemonDetailsContext);
 
@@ -71,4 +71,4 @@ function PokemonStatus() {
   );
 }
 
-export default PokemonStatus;
+export default PokemonAbout;

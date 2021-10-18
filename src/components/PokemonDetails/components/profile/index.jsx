@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { PokemonDetailsContext } from "../index";
+import { PokemonDetailsContext } from "../..";
 
 function PokemonProfile() {
   const ctxValue = useContext(PokemonDetailsContext);
