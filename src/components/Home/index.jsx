@@ -12,6 +12,7 @@ function Home() {
                 <img alt="pokedex-logo" src="/assets/pokedex-logo.png" className="absolute pokedex-menu-img" />
               </button>
             </Link>
+            <p className="font-minecraft text-xl my-5">POKEDEX</p>
           </div>
           <div className="flex flex-col">
             <Link to="/my-pokemon">
@@ -19,6 +20,7 @@ function Home() {
                 <img alt="pokeball-icon" src="/assets/pokeball.png" className="absolute pokeball-menu-img" />
               </button>
             </Link>
+            <p className="font-minecraft text-xl my-5">MY POKEMON</p>
           </div>
         </div>
       </div>
