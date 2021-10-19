@@ -32,9 +32,9 @@ function Thumbnail() {
   };
   const renderImage = () => {
     if (isLoading) {
-      return <div className="w-80 h-80 rounded bg-grey-40 animate-pulse"></div>;
+      return <div className="w-60 h-60 tablet:w-80 tablet:h-80 rounded bg-grey-40 animate-pulse"></div>;
     } else {
-      return <img alt="bulbasaur" src={pokemon.image} className="w-80 h-80" />;
+      return <img alt="bulbasaur" src={pokemon.image} className="w-60 h-60 tablet:w-80 tablet:h-80" />;
     }
   };
   const renderBtn = () => {
@@ -55,7 +55,7 @@ function Thumbnail() {
       {renderName()}
       {renderID()}
       {/* img */}
-      <div className="self-center mt-10">{renderImage()}</div>
+      <div className="self-center">{renderImage()}</div>
       {/* btn details */}
       {renderBtn()}
     </div>
