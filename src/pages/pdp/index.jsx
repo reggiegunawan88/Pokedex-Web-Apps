@@ -7,6 +7,7 @@ import PokemonDetail from "components/PokemonDetails";
 
 export const PokemonDetailsContext = createContext();
 
+/* Product Detail Page */
 function DetailPage() {
   const [pokemon, setPokemon] = useState([]);
   const route = useLocation();
