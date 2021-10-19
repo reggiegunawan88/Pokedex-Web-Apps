@@ -55,7 +55,7 @@ function Thumbnail() {
       {renderName()}
       {renderID()}
       {/* img */}
-      <div className="self-center">{renderImage()}</div>
+      <div className="self-center mt-3">{renderImage()}</div>
       {/* btn details */}
       {renderBtn()}
     </div>
