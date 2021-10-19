@@ -43,6 +43,7 @@ module.exports = {
       pokemonCard: "#B3C3FF",
       snackbarGreen: "#27AE60",
       snackbarRed: "#D96262",
+      skeleton: "#DDDDDD",
 
       /* custom hex colors for each pokemon type */
       normal: "#A8A77A",
