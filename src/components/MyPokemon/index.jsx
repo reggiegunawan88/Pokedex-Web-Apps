@@ -1,13 +1,15 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext, createContext } from "react";
 import { MyPokemonContext } from "pages/inventory";
 import Loading from "./components/loading";
 import MyPokemonList from "./components/list";
 import EmptyState from "./components/emptyState";
 
+export const myPokemonContext = createContext();
+
 function MyPokemon() {
   const myPokemon = useContext(MyPokemonContext);
   const [loading, setLoading] = useState(true);
-  console.log(myPokemon.length);
+  const [modalRelease, setModalRelease] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {

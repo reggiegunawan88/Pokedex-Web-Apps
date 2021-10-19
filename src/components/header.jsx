@@ -13,7 +13,7 @@ function Header() {
           <p className="font-bold font-minecraft mx-4 hidden laptop:block">Back</p>
         </div>
         {/* owned pokemon */}
-        <p className="font-sans font-bold text-base">Owned: 100</p>
+        {/* <p className="font-sans font-bold text-base">Owned: 100</p> */}
         {/* My Pokemon nav */}
         <div className="flex flex-row items-center">
           <img className="h-7 w-7" alt="pokeball-icon" src="/assets/pokeball.png" />
