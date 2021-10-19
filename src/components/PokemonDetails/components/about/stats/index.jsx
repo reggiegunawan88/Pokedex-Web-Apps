@@ -22,7 +22,7 @@ function PokemonStats() {
       );
     } else {
       for (let i = 0; i < 5; i++) {
-        elements.push(<div className="h-5 bg-grey-40 animate-pulse my-3 rounded"></div>);
+        elements.push(<div className="h-5 bg-skeleton animate-pulse my-3 rounded"></div>);
       }
     }
     return elements;

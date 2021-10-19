@@ -18,10 +18,10 @@ function PokemonAbout() {
       // skeleton
       return (
         <div className="flex flex-col gap-y-4">
-          <div className="w-1/2 h-3 bg-grey-40 animate-pulse rounded-full"></div>
-          <div className="w-1/2 h-3 bg-grey-40 animate-pulse rounded-full"></div>
-          <div className="w-1/2 h-3 bg-grey-40 animate-pulse rounded-full"></div>
-          <div className="w-1/2 h-3 bg-grey-40 animate-pulse rounded-full"></div>
+          <div className="w-1/2 h-3 bg-skeleton animate-pulse rounded-full"></div>
+          <div className="w-1/2 h-3 bg-skeleton animate-pulse rounded-full"></div>
+          <div className="w-1/2 h-3 bg-skeleton animate-pulse rounded-full"></div>
+          <div className="w-1/2 h-3 bg-skeleton animate-pulse rounded-full"></div>
         </div>
       );
     } else {

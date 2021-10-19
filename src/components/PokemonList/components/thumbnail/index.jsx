@@ -18,28 +18,28 @@ function Thumbnail() {
   /* progressive rendering -> prevent bad CLS */
   const renderName = () => {
     if (isLoading) {
-      return <div className="h-10 w-1/2 rounded bg-grey-40 animate-pulse"></div>;
+      return <div className="h-10 w-1/2 rounded bg-skeleton animate-pulse"></div>;
     } else {
       return <p className="font-bold font-minecraft text-3xl capitalize">{pokemon.name}</p>;
     }
   };
   const renderID = () => {
     if (isLoading) {
-      return <div className="h-5 w-1/4 rounded bg-grey-40 animate-pulse mt-2"></div>;
+      return <div className="h-5 w-1/4 rounded bg-skeleton animate-pulse mt-2"></div>;
     } else {
       return <p className="text-lg font-minecraft mt-2">{pokemonID}</p>;
     }
   };
   const renderImage = () => {
     if (isLoading) {
-      return <div className="w-60 h-60 tablet:w-80 tablet:h-80 rounded bg-grey-40 animate-pulse"></div>;
+      return <div className="w-60 h-60 tablet:w-80 tablet:h-80 rounded bg-skeleton animate-pulse"></div>;
     } else {
       return <img alt="bulbasaur" src={pokemon.image} className="w-60 h-60 tablet:w-80 tablet:h-80" />;
     }
   };
   const renderBtn = () => {
     if (isLoading) {
-      return <div className="w-31 h-10 mt-2 rounded-full bg-grey-40 animate-pulse"></div>;
+      return <div className="w-31 h-10 mt-2 rounded-full bg-skeleton animate-pulse"></div>;
     } else {
       return (
         <Link to={`/pokemon/${pokemon.name}`}>
