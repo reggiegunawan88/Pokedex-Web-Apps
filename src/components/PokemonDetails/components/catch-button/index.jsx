@@ -9,7 +9,9 @@ function CatchButton() {
     const chance = Math.random();
     if (chance < 0.5) {
       interaction.openSnackbarFailed();
+      interaction.closeSnackbarSuccess();
     } else {
+      interaction.closeSnackbarSuccess();
       interaction.closeSnackbarFailed();
       interaction.openModal();
     }
