@@ -7,6 +7,10 @@
   @apply p-2 h-20 tablet:h-40 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
 }
 
-.btn-CTA {
+.btn-CTA-submit {
   @apply bg-redBtn w-full p-3 rounded-full;
+}
+
+.btn-CTA-cancel {
+  @apply bg-white border-default border-redBtn w-full p-3 rounded-full;
 }

@@ -1,11 +1,18 @@
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ModalContext } from "components/MyPokemon";
 
 function Card(props) {
+  const ctx = useContext(ModalContext);
   const pokemon = props.pokemon;
+
+  const releasePokemon = () => {
+    ctx.openModal();
+  };
   return (
     <div className="bg-white border-default border-pokedexBlue rounded transform transition duration-300 hover:scale-105">
       <div className="flex flex-col ">
-        <div className="flex self-end p-2 cursor-pointer">
+        <div className="flex self-end p-2 cursor-pointer" onClick={releasePokemon}>
           <FontAwesomeIcon icon="times-circle" className="text-gray-450" />
         </div>
         <div className="self-center">
