@@ -9,7 +9,7 @@ function Inventory() {
 
   const getStoredPokemons = () => {
     const data = localStorage.getItem("myPokemon");
-    setMyPokemon(JSON.parse(data));
+    data === null ? setMyPokemon([]) : setMyPokemon(JSON.parse(data));
   };
 
   useEffect(() => {
