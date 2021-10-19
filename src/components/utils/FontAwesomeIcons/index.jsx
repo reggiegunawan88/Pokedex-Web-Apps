@@ -1,4 +1,5 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faCheck, faTimes, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faTimesCircle, faCheck, faTimes, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faCheck, faTimes, faArrowLeft);
+// import here for font-awesome-icon needs
+library.add(faTimesCircle, faCheck, faTimes, faArrowLeft);
