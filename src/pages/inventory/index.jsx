@@ -18,7 +18,7 @@ function Inventory() {
 
   return (
     <MyPokemonContext.Provider value={myPokemon}>
-      <div className="pt-20 pb-10 w-full">
+      <div className="pt-24 pb-10 w-full">
         <MyPokemon />
       </div>
     </MyPokemonContext.Provider>

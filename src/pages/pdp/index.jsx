@@ -28,7 +28,7 @@ function DetailPage() {
 
   return (
     <PokemonDetailsContext.Provider value={{ pokemon, loading }}>
-      <div className="pt-20 pb-10 w-full laptopM:pt-31">
+      <div className="pt-24 pb-10 w-full laptopM:pt-31">
         <PokemonDetail />
       </div>
     </PokemonDetailsContext.Provider>

@@ -12,12 +12,14 @@ function Header() {
           <FontAwesomeIcon icon="arrow-left" />
           <p className="font-bold font-minecraft mx-4 hidden laptop:block">Back</p>
         </div>
-        {/* owned pokemon */}
-        {/* <p className="font-sans font-bold text-base">Owned: 100</p> */}
-        {/* My Pokemon nav */}
+        <div className="mx-auto">
+          <Link to="/pokedex">
+            <img alt="pokeball-logo" src="/assets/pokedex-pixel.png" className="h-9 tablet:h-12" />
+          </Link>
+        </div>
         <div className="flex flex-row items-center">
           <Link to="/my-pokemon">
-            <img className="h-7 w-7" alt="pokeball-icon" src="/assets/pokeball.png" />
+            {/* <img className="h-7 w-7" alt="pokeball-icon" src="/assets/pokeball.png" /> */}
             <p className="font-bold font-minecraft mx-4 hidden laptop:block">My Pokemon</p>
           </Link>
         </div>
