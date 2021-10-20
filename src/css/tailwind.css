@@ -7,6 +7,6 @@
 @layer base {
   @font-face {
     font-family: "Minecraft";
-    src: local("Minecraft"), url("../font/Minecraft.ttf") format("truetype");
+    src: local("Minecraft"), url("components/utils/font/Minecraft.ttf") format("truetype");
   }
 }

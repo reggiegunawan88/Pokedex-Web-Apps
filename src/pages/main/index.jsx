@@ -1,6 +1,7 @@
-import Home from "../../components/Home";
+import Home from "components/Home";
 
-function Main() {
+/* Landing page */
+function Homepage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Home />
@@ -8,4 +9,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Homepage;

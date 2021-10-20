@@ -1,27 +1,27 @@
 import React, { useEffect, useState, useContext } from "react";
-import { PokemonDetailsContext } from "..";
-import { hashedPokemonID } from "../../utils/helper/helper";
+import { PokemonDetailsContext } from "pages/pdp/index";
+import { hashedPokemonID } from "components/utils/helper/helper";
 import PokemonStats from "./stats";
 
-function PokemonStatus() {
+function PokemonAbout() {
   const [pokemon, setPokemon] = useState([]);
-  const contextValue = useContext(PokemonDetailsContext);
+  const ctxValue = useContext(PokemonDetailsContext);
 
   useEffect(() => {
-    if (contextValue.pokemon) {
-      setPokemon(contextValue.pokemon);
+    if (ctxValue.pokemon) {
+      setPokemon(ctxValue.pokemon);
     }
-  }, [contextValue.pokemon]);
+  }, [ctxValue.pokemon]);
 
   const renderAbout = () => {
     if (pokemon.length === 0) {
       // skeleton
       return (
         <div className="flex flex-col gap-y-4">
-          <div className="w-1/2 h-3 bg-grey-40 animate-pulse rounded-full"></div>
-          <div className="w-1/2 h-3 bg-grey-40 animate-pulse rounded-full"></div>
-          <div className="w-1/2 h-3 bg-grey-40 animate-pulse rounded-full"></div>
-          <div className="w-1/2 h-3 bg-grey-40 animate-pulse rounded-full"></div>
+          <div className="w-1/2 h-3 bg-skeleton animate-pulse rounded-full"></div>
+          <div className="w-1/2 h-3 bg-skeleton animate-pulse rounded-full"></div>
+          <div className="w-1/2 h-3 bg-skeleton animate-pulse rounded-full"></div>
+          <div className="w-1/2 h-3 bg-skeleton animate-pulse rounded-full"></div>
         </div>
       );
     } else {
@@ -71,4 +71,4 @@ function PokemonStatus() {
   );
 }
 
-export default PokemonStatus;
+export default PokemonAbout;

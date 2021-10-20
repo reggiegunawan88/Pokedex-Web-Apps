@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
-import { PokemonContext } from "../PokemonList";
+import { PokemonListContext } from "pages/pcp";
 
 function PokemonCard(props) {
-  const contextValue = useContext(PokemonContext);
+  const ctxValue = useContext(PokemonListContext);
 
   // call func to context parent
   const choosePokemon = () => {
-    contextValue.setPokemonThumbnail(props.data);
-    contextValue.setPokemonID(props.idx + 1);
+    ctxValue.setPokemonThumbnail(props.data);
+    ctxValue.setPokemonID(props.idx + 1);
   };
 
   return (

@@ -1,6 +1,12 @@
 module.exports = {
-  purge: ["./src/pages/**/*.{js,jsx,ts,tsx}", "./src/components/**/*.{js,jsx,ts,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  // mode: "jit",
+  purge: {
+    content: ["./src/pages/**/*.{js,jsx,ts,tsx}", "./src/components/**/*.{js,jsx,ts,tsx}", "./src/components/**/**/*.{js,jsx,ts,tsx}"],
+    options: {
+      safelist: [/^bg/],
+    },
+  },
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
@@ -38,6 +44,9 @@ module.exports = {
       redBtn: "#EB5757",
       pokedexBlue: "#5169BF",
       pokemonCard: "#B3C3FF",
+      snackbarGreen: "#27AE60",
+      snackbarRed: "#D96262",
+      skeleton: "#DDDDDD",
 
       /* custom hex colors for each pokemon type */
       normal: "#A8A77A",
