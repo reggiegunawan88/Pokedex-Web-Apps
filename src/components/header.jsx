@@ -19,8 +19,8 @@ function Header() {
         </div>
         <div className="flex flex-row items-center">
           <Link to="/my-pokemon">
-            {/* <img className="h-6  tablet:h-10 tablet:w-10" alt="pokeball-icon" src="/assets/pokeball-pixel.png" /> */}
-            <p className="font-bold font-minecraft">My Pokemon</p>
+            <img className="h-6 tablet:hidden  " alt="pokeball-icon" src="/assets/pokeball-pixel.png" />
+            <p className="font-bold font-minecraft hidden tablet:block">My Pokemon</p>
           </Link>
         </div>
       </div>
