@@ -45,5 +45,6 @@ export const deletePokemon = (pokemon) => {
 
 // get caught pokemon length
 export const getCaughtPokemon = () => {
-  return JSON.parse(localStorage.getItem("myPokemon")).length;
+  const storedPokemon = JSON.parse(localStorage.getItem("myPokemon"));
+  return storedPokemon || null;
 };
