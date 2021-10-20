@@ -1,5 +1,6 @@
 import React, { useState, useEffect, createContext } from "react";
 import MyPokemon from "components/MyPokemon";
+import { getCaughtPokemon } from "components/utils/helper/helper";
 
 export const MyPokemonContext = createContext();
 
@@ -8,8 +9,8 @@ function Inventory() {
   const [myPokemon, setMyPokemon] = useState([]);
 
   const getStoredPokemons = () => {
-    const data = localStorage.getItem("myPokemon");
-    data === null ? setMyPokemon([]) : setMyPokemon(JSON.parse(data));
+    const data = getCaughtPokemon();
+    data === null ? setMyPokemon([]) : setMyPokemon(data);
   };
 
   useEffect(() => {
