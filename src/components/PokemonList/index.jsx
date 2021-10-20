@@ -6,7 +6,8 @@ import Thumbnail from "./components/thumbnail";
 function PokemonList() {
   const [totalPokemon, setTotalPokemon] = useState(0);
   useEffect(() => {
-    setTotalPokemon(getCaughtPokemon());
+    const data = getCaughtPokemon();
+    data === null ? setTotalPokemon(0) : setTotalPokemon(getCaughtPokemon().length);
   }, []);
 
   return (
