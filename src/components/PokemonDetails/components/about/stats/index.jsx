@@ -5,33 +5,45 @@ import Meterbar from "../meterbar";
 function PokemonStats() {
   const pokemonData = useContext(PokemonDetailsContext);
 
-  /* progressive rendering */
+  /* skeleton rendering */
+  const renderSkeleton = () => {
+    const elements = [];
+    for (let i = 0; i < 5; i++) {
+      elements.push(
+        <div className="grid grid-cols-2 my-3 gap-x-4">
+          <div className="h-3 bg-skeleton animate-pulse rounded"></div>
+          <div className="h-3 bg-skeleton animate-pulse rounded"></div>
+        </div>
+      );
+    }
+    return elements;
+  };
   const renderPokemonStats = () => {
     const elements = [];
     const pokemonStats = pokemonData.pokemon.stats;
-    if (pokemonStats !== undefined) {
-      pokemonStats.map((data, i) =>
-        elements.push(
-          <tr key={i}>
-            <td className="w-1/2 capitalize">{data.stat.name}</td>
-            <td>
-              <Meterbar value={data.base_stat} />
-            </td>
-          </tr>
-        )
-      );
-    } else {
-      for (let i = 0; i < 5; i++) {
-        elements.push(<div className="h-5 bg-skeleton animate-pulse my-3 rounded"></div>);
-      }
-    }
+    pokemonStats.map((data, i) =>
+      elements.push(
+        <tr key={i} className="gap-x-4">
+          <td className="w-1/2 capitalize">{data.stat.name}</td>
+          <td>
+            <Meterbar value={data.base_stat} />
+          </td>
+        </tr>
+      )
+    );
     return elements;
   };
 
   return (
-    <table className="table-auto mx-2 my-2 font-bold">
-      <tbody>{renderPokemonStats()}</tbody>
-    </table>
+    <div>
+      {pokemonData.pokemon.length === 0 ? (
+        <div className="flex flex-col">{renderSkeleton()}</div>
+      ) : (
+        <table className="table-auto w-full my-2 font-bold">
+          <tbody>{renderPokemonStats()}</tbody>
+        </table>
+      )}
+    </div>
   );
 }
 
