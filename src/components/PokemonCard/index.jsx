@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { PokemonContext } from "components/PokemonList";
+import { PokemonListContext } from "pages/pcp";
 
 function PokemonCard(props) {
-  const ctxValue = useContext(PokemonContext);
+  const ctxValue = useContext(PokemonListContext);
 
   // call func to context parent
   const choosePokemon = () => {

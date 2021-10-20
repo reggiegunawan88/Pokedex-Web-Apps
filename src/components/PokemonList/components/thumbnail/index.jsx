@@ -1,10 +1,10 @@
 import { useContext, useState, useEffect } from "react";
-import { PokemonContext } from "../../index";
+import { PokemonListContext } from "pages/pcp";
 import { Link } from "react-router-dom";
-import { hashedPokemonID } from "../../../utils/helper/helper";
+import { hashedPokemonID } from "components/utils/helper/helper";
 
 function Thumbnail() {
-  const ctxValue = useContext(PokemonContext); // get pokemon data from parent context
+  const ctxValue = useContext(PokemonListContext); // get pokemon data from parent context
   const [pokemon, setPokemon] = useState([]);
   const [pokemonID, setPokemonID] = useState(0);
   const [isLoading, setIsLoading] = useState(false);

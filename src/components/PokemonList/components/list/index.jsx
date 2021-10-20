@@ -1,11 +1,11 @@
 import React, { useState, useContext } from "react";
-import LazyLoading from "../../../PokemonCard/components/lazyLoading";
-import PokemonCard from "../../../PokemonCard";
-import { PokemonContext } from "../../index";
+import LazyLoading from "components/PokemonCard/components/lazyLoading";
+import PokemonCard from "components/PokemonCard";
+import { PokemonListContext } from "pages/pcp";
 import "./index.css";
 
 function PokemonList() {
-  const ctxValue = useContext(PokemonContext);
+  const ctxValue = useContext(PokemonListContext);
   const [itemsPerPage, setItemsPerPage] = useState(20);
 
   // load more btn func

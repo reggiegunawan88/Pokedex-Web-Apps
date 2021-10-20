@@ -55,6 +55,7 @@ function PokemonDetails() {
     <userInteractionContext.Provider value={data}>
       <SnackbarSuccess />
       <SnackbarFailed />
+      <Modal />
       <div className="h-full max-w-xl mx-auto">
         <div className="flex flex-col bg-white mx-4 rounded-lg shadow-md px-4 py-3">
           <div className="grid grid-cols-1 gap-y-2 tablet:grid-cols-2">
@@ -65,7 +66,6 @@ function PokemonDetails() {
         <div className="w-full text-center mt-6">
           <CatchButton />
         </div>
-        <Modal />
       </div>
     </userInteractionContext.Provider>
   );
