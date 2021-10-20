@@ -11,6 +11,7 @@ function MyPokemon() {
   const myPokemon = useContext(MyPokemonContext);
   const [loading, setLoading] = useState(true);
   const [modal, setModal] = useState(false);
+  const [releasedPokemon, setReleasedPokemon] = useState([]);
 
   const openModal = () => {
     setModal(true);
@@ -22,8 +23,10 @@ function MyPokemon() {
   const data = {
     myPokemon,
     modal,
+    releasedPokemon,
     openModal,
     closeModal,
+    setReleasedPokemon,
   };
 
   useEffect(() => {

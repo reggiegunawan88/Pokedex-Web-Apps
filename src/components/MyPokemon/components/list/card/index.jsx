@@ -6,13 +6,15 @@ function Card(props) {
   const ctx = useContext(ModalContext);
   const pokemon = props.pokemon;
 
-  const releasePokemon = () => {
+  // open modal and delete pokemon on modal CTA
+  const triggerModal = () => {
+    ctx.setReleasedPokemon(pokemon);
     ctx.openModal();
   };
   return (
     <div className="bg-white border-default border-pokedexBlue rounded transform transition duration-300 hover:scale-105">
       <div className="flex flex-col ">
-        <div className="flex self-end p-2 cursor-pointer" onClick={releasePokemon}>
+        <div className="flex self-end p-2 cursor-pointer" onClick={triggerModal}>
           <FontAwesomeIcon icon="times-circle" className="text-gray-450" />
         </div>
         <div className="self-center">

@@ -20,6 +20,7 @@ export const getLastURLPath = (url) => {
   return url.substring(url.lastIndexOf("/") + 1);
 };
 
+// save pokemon to local storage
 export const savePokemonToStorage = (key, newPokemon) => {
   let myPokemons = JSON.parse(localStorage.getItem("myPokemon") || "[]");
 
@@ -32,4 +33,12 @@ export const savePokemonToStorage = (key, newPokemon) => {
     localStorage.setItem(key, JSON.stringify(myPokemons));
     return true;
   }
+};
+
+// delete pokemon from local storage
+export const deletePokemon = (pokemon) => {
+  let catchedPokemon = JSON.parse(localStorage.getItem("myPokemon"));
+  let newData = catchedPokemon.filter((item) => item.nick !== pokemon.nick);
+  // set new data to storage
+  localStorage.setItem("myPokemon", JSON.stringify(newData));
 };
