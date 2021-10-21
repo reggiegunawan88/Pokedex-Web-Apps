@@ -1,4 +1,4 @@
-import Footer from "../Footer.jsx";
+import Footer from "../footer.jsx";
 import { Link } from "react-router-dom";
 
 function Home() {

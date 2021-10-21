@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Fragment } from "react";
-import Header from "components/Header";
-import Footer from "components/Footer";
+import Header from "components/header";
+import Footer from "components/footer";
 import Home from "components/Home";
 import PCP from "pages/pcp";
 import PDP from "pages/pdp";
