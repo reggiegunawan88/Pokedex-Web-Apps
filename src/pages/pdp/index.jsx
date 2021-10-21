@@ -19,6 +19,9 @@ function DetailPage() {
   const { error, loading, data } = useQuery(POKEMON_DETAILS, {
     variables: gqlVar,
   });
+  if (error) {
+    console.log(`Error! ${error.message}`);
+  }
 
   useEffect(() => {
     if (data) {
