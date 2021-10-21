@@ -1,7 +1,7 @@
 import { gql } from "@apollo/client";
 
 // all gql queries list, you can split this again after exceeding 300 lines of code
-export const LOAD_POKEMONS = gql`
+export const POKEMON_LIST = gql`
   query pokemons($limit: Int, $offset: Int) {
     pokemons(limit: $limit, offset: $offset) {
       count
@@ -23,7 +23,6 @@ export const POKEMON_DETAILS = gql`
       name
       height
       weight
-      message
       abilities {
         ability {
           name

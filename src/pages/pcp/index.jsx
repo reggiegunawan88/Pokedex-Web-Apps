@@ -1,6 +1,6 @@
 import React, { useState, useEffect, createContext } from "react";
 import PokemonList from "components/PokemonList";
-import { LOAD_POKEMONS } from "components/utils/GraphQL/queries";
+import { POKEMON_LIST } from "components/utils/GraphQL/queries";
 import { useQuery } from "@apollo/client";
 
 export const PokemonListContext = createContext();
@@ -17,7 +17,7 @@ function ListPage() {
     offset: 0,
   };
   // get pokemon data list with gql query
-  const { error, loading, data } = useQuery(LOAD_POKEMONS, {
+  const { error, loading, data } = useQuery(POKEMON_LIST, {
     variables: gqlVar,
   });
   if (error) {
