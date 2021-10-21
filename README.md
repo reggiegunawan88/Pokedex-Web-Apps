@@ -30,8 +30,9 @@ https://pokedex-gql-apps.web.app/
 # Google Pagespeed Insights Score
 
 <p align="center"
-<img src="https://user-images.githubusercontent.com/44907916/138204819-d2256c3e-7d88-414d-b463-7713b6e646e0.PNG"/>   
+<img src="https://user-images.githubusercontent.com/44907916/138204961-7dfcabfe-208a-4c42-a332-c1580a43c4d4.PNG"/>
 </p>
+
 
 
 Copyright © by Reggie Gunawan
