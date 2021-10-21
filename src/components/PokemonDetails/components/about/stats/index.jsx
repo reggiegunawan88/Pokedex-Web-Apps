@@ -10,7 +10,7 @@ function PokemonStats() {
     const elements = [];
     for (let i = 0; i < 5; i++) {
       elements.push(
-        <div className="grid grid-cols-2 my-3 gap-x-4">
+        <div key={i} className="grid grid-cols-2 my-3 gap-x-4">
           <div className="h-3 bg-skeleton animate-pulse rounded"></div>
           <div className="h-3 bg-skeleton animate-pulse rounded"></div>
         </div>
