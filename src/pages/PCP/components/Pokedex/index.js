@@ -1,7 +1,7 @@
 import { getCaughtPokemon } from "components/utils/helper/helper";
 import React, { useEffect, useState } from "react";
-import List from "./components/List";
-import Thumbnail from "./components/Thumbnail";
+import PokedexList from "./components/PokedexList";
+import PokedexThumbnail from "./components/PokedexThumbnail";
 
 function Pokedex() {
   const [totalPokemon, setTotalPokemon] = useState(0);
@@ -12,7 +12,7 @@ function Pokedex() {
 
   return (
     <div className="flex flex-col gap-y-7 laptopM:grid laptopM:grid-flow-col-dense laptopM:gap-x-4 laptopM:mt-5 laptop:mx-6">
-      <Thumbnail />
+      <PokedexThumbnail />
       {/* pokemon list grid */}
       <div className="laptopM:bg-white laptopM:rounded-lg laptopM:shadow-lg laptopM:p-7 laptopM:h-auto">
         <div className="flex flex-row w-full gap-x-2 justify-center px-4 my-2 items-center">
@@ -23,7 +23,7 @@ function Pokedex() {
           </div>
           <hr className="border-b border-pokedexBlue w-full" />
         </div>
-        <List />
+        <PokedexList />
       </div>
     </div>
   );
