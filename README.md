@@ -25,7 +25,13 @@ https://pokedex-gql-apps.web.app/
  <img src="https://user-images.githubusercontent.com/44907916/138203239-68a1f55e-b27f-46fa-a093-6d4c9d0532ee.PNG" />
  <img src="https://user-images.githubusercontent.com/44907916/138204307-44d86295-bd9f-46f1-a21e-95995e98aa2c.PNG" />
  <img src="https://user-images.githubusercontent.com/44907916/138204358-d2e2e035-8b66-4030-bb58-92bfe784f6c1.PNG" /> 
-
 </p>
+
+# Google Pagespeed Insights Score
+
+<p float="center"
+<img src="https://user-images.githubusercontent.com/44907916/138204819-d2256c3e-7d88-414d-b463-7713b6e646e0.PNG"/>   
+</p>
+
 
 Copyright © by Reggie Gunawan
