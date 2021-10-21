@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { userInteractionContext } from "components/PokemonDetails";
+import { userInteractionContext } from "../index";
 import "./index.css";
 
 function SnackbarSuccess() {

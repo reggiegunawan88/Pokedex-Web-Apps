@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { userInteractionContext } from "components/PokemonDetails";
+import { userInteractionContext } from "../index";
 
 function CatchButton() {
   const interaction = useContext(userInteractionContext);

@@ -1,10 +1,10 @@
 import React, { useState, createContext } from "react";
-import PokemonProfile from "./components/profile";
-import PokemonAbout from "./components/about";
-import CatchButton from "./components/catch-button";
-import SnackbarSuccess from "./components/snackbar/success";
-import SnackbarFailed from "./components/snackbar/failed";
-import Modal from "./components/modal";
+import PokemonProfile from "./PokemonDetails/PokemonProfile";
+import PokemonAbout from "./PokemonDetails/About";
+import ButtonCatch from "./PokemonDetails/ButtonCatch";
+import SnackbarSuccess from "./Snackbar/SnackbarSuccess";
+import SnackbarFailed from "./Snackbar/SnackbarFailed";
+import ModalCatch from "./PokemonDetails/ModalCatch";
 
 export const userInteractionContext = createContext();
 
@@ -55,7 +55,7 @@ function PokemonDetails() {
     <userInteractionContext.Provider value={data}>
       <SnackbarSuccess />
       <SnackbarFailed />
-      <Modal />
+      <ModalCatch />
       <div className="h-full max-w-xl mx-auto">
         <div className="flex flex-col bg-white mx-4 rounded-lg shadow-md px-4 py-3">
           <div className="grid grid-cols-1 gap-y-2 tablet:grid-cols-2">
@@ -64,7 +64,7 @@ function PokemonDetails() {
           </div>
         </div>
         <div className="w-full text-center mt-6">
-          <CatchButton />
+          <ButtonCatch />
         </div>
       </div>
     </userInteractionContext.Provider>

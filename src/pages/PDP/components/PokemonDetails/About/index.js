@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { PokemonDetailsContext } from "pages/PDP";
 import { hashedPokemonID } from "components/utils/helper/helper";
-import PokemonStats from "./stats";
+import PokemonStats from "./components/PokemonStats";
 
 function PokemonAbout() {
   const [pokemon, setPokemon] = useState([]);

@@ -3,7 +3,7 @@ import { useQuery } from "@apollo/client";
 import { useLocation } from "react-router";
 import { getLastURLPath } from "components/utils/helper/helper";
 import { POKEMON_DETAILS } from "components/utils/GraphQL/queries";
-import PokemonDetail from "components/PokemonDetails";
+import PokemonDetail from "./components/index";
 
 export const PokemonDetailsContext = createContext();
 
