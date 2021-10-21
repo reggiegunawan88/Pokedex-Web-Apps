@@ -29,7 +29,7 @@ https://pokedex-gql-apps.web.app/
 
 # Google Pagespeed Insights Score
 
-<p align="center">
+<p align="center" width="200" height="200">
 <img src="https://user-images.githubusercontent.com/44907916/138204961-7dfcabfe-208a-4c42-a332-c1580a43c4d4.PNG" />
 </p>
 
