@@ -13,7 +13,7 @@ function Header() {
           <p className="font-bold font-minecraft mx-4 hidden laptop:block">Back</p>
         </div>
         <div className="flex">
-          <Link to="/pokedex">
+          <Link to="/">
             <img alt="pokeball-logo" src="/assets/pokedex-pixel.png" className="h-9 tablet:h-12" />
           </Link>
         </div>
