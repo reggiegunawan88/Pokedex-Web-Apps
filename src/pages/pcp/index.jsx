@@ -26,6 +26,7 @@ function ListPage() {
 
   useEffect(() => {
     if (data) {
+      window.scrollTo(0, 0);
       setPokemonList(data.pokemons.results);
       setPokemonThumbnail(data.pokemons.results[0]); // pokemon thumbnail 1st idx
     }

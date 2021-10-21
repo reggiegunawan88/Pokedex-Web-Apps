@@ -18,7 +18,7 @@ function Card(props) {
           <FontAwesomeIcon icon="times-circle" className="text-gray-450" />
         </div>
         <div className="self-center">
-          <img alt="pokemon" src={pokemon.sprites.front_default} className="w-15 h-15 tablet:w-20 tablet:h-20" />
+          <img alt="pokemon" src={pokemon.sprites.front_default} className="w-20 h-20 tablet:w-40 tablet:h-40" />
         </div>
         <div className="w-full bg-pokedexBlue text-center rounded-b p-2">
           <p className="font-minecraft text-yellow-400 capitalize">{pokemon.nick}</p>
