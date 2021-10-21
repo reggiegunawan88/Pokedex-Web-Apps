@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
-import { PokemonDetailsContext } from "pages/pdp/index";
+import { PokemonDetailsContext } from "pages/PDP";
 import { hashedPokemonID } from "components/utils/helper/helper";
 import PokemonStats from "./stats";
 

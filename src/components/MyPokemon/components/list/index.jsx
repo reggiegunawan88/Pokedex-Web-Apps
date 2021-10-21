@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { MyPokemonContext } from "pages/inventory";
+import { MyPokemonContext } from "pages/Inventory";
 import Card from "./card";
 
 function MyPokemonList() {

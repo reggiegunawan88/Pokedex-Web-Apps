@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { PokemonDetailsContext } from "pages/pdp";
+import { PokemonDetailsContext } from "pages/PDP";
 import { savePokemonToStorage } from "components/utils/helper/helper";
 import { userInteractionContext } from "components/PokemonDetails";
 import "./index.css";

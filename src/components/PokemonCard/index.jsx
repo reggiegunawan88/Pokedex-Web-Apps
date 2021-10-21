@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { PokemonListContext } from "pages/pcp";
+import { PokemonListContext } from "pages/PCP";
 
 function PokemonCard(props) {
   const ctxValue = useContext(PokemonListContext);

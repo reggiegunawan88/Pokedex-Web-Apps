@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect } from "react";
-import { PokemonListContext } from "pages/pcp";
+import { PokemonListContext } from "pages/PCP";
 import { Link } from "react-router-dom";
 import { hashedPokemonID } from "components/utils/helper/helper";
 

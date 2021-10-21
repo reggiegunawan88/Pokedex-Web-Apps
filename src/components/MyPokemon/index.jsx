@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext, createContext } from "react";
-import { MyPokemonContext } from "pages/inventory";
+import { MyPokemonContext } from "pages/Inventory";
 import Loading from "./components/loading";
 import MyPokemonList from "./components/list";
 import EmptyState from "./components/emptyState";

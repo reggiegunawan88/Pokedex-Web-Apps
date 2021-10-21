@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Fragment } from "react";
-import Header from "components/header";
-import Footer from "components/footer";
+import Header from "components/Header";
+import Footer from "components/Footer";
 import Home from "components/Home";
-import PCP from "pages/pcp";
-import PDP from "pages/pdp";
-import Inventory from "pages/inventory";
+import PCP from "pages/PCP";
+import PDP from "pages/PDP";
+import Inventory from "pages/Inventory";
 
 function AppRouter() {
   return (
@@ -17,7 +17,7 @@ function AppRouter() {
             <Header />
             <Route path="/pokedex" component={PCP} />
             <Route path="/pokemon/:name" component={PDP} />
-            <Route path="/my-pokemon" component={Inventory} />
+            <Route path="/myPokemon" component={Inventory} />
           </Fragment>
           <Footer />
         </Switch>
