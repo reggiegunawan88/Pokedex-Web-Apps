@@ -1,5 +1,5 @@
 import React, { useState, useEffect, createContext } from "react";
-import PokemonList from "components/PokemonList";
+import Pokedex from "./components/Pokedex";
 import { POKEMON_LIST } from "components/utils/GraphQL/queries";
 import { useQuery } from "@apollo/client";
 
@@ -44,7 +44,7 @@ function ListPage() {
   return (
     <PokemonListContext.Provider value={ctxData}>
       <div className="pt-24 pb-10 w-full">
-        <PokemonList />
+        <Pokedex />
       </div>
     </PokemonListContext.Provider>
   );

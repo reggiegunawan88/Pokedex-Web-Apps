@@ -1,9 +1,9 @@
 import { getCaughtPokemon } from "components/utils/helper/helper";
 import React, { useEffect, useState } from "react";
-import List from "./components/list";
-import Thumbnail from "./components/thumbnail";
+import List from "./components/List";
+import Thumbnail from "./components/Thumbnail";
 
-function PokemonList() {
+function Pokedex() {
   const [totalPokemon, setTotalPokemon] = useState(0);
   useEffect(() => {
     const data = getCaughtPokemon();
@@ -29,4 +29,4 @@ function PokemonList() {
   );
 }
 
-export default PokemonList;
+export default Pokedex;
