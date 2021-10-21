@@ -20,6 +20,9 @@ function ListPage() {
   const { error, loading, data } = useQuery(LOAD_POKEMONS, {
     variables: gqlVar,
   });
+  if (error) {
+    console.log(`Error! ${error.message}`);
+  }
 
   useEffect(() => {
     if (data) {
