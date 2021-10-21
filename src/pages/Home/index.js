@@ -1,5 +1,6 @@
 import HomeButton from "components/Home/HomeButton";
 import HomeLogo from "components/Home/HomeLogo";
+import Footer from "components/Footer";
 
 /* Landing page */
 function Homepage() {
@@ -9,6 +10,7 @@ function Homepage() {
         <HomeLogo />
         <HomeButton />
       </div>
+      <Footer />
     </div>
   );
 }
