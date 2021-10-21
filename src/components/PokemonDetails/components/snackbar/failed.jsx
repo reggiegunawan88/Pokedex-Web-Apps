@@ -6,7 +6,7 @@ import "./index.css";
 function SnackbarFailed() {
   const status = useContext(userInteractionContext);
   return (
-    <div>
+    <>
       {status.snackbarFailed && (
         <div className="slide fixed flex w-full justify-center z-50">
           <div className="max-w-md bg-snackbarRed rounded-lg mx-4">
@@ -17,7 +17,7 @@ function SnackbarFailed() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
 

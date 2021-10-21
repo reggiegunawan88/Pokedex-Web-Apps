@@ -35,7 +35,7 @@ function PokemonStats() {
   };
 
   return (
-    <div>
+    <>
       {pokemonData.pokemon.length === 0 ? (
         <div className="flex flex-col">{renderSkeleton()}</div>
       ) : (
@@ -43,7 +43,7 @@ function PokemonStats() {
           <tbody>{renderPokemonStats()}</tbody>
         </table>
       )}
-    </div>
+    </>
   );
 }
 

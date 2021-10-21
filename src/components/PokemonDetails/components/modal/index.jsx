@@ -30,7 +30,7 @@ function Modal() {
   };
 
   return (
-    <div>
+    <>
       {interaction.modal && (
         <div className="fade-in">
           <div className="fixed bg-gray-500 top-0 bottom-0 right-0 left-0 content-none z-50 opacity-75"></div>
@@ -50,7 +50,7 @@ function Modal() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
 
