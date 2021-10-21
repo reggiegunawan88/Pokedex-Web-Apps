@@ -1,5 +1,5 @@
 import React, { useState, useEffect, createContext } from "react";
-import MyPokemon from "components/MyPokemon";
+import MyPokemon from "./components/MyPokemon/index.js";
 import { getCaughtPokemon } from "components/utils/helper/helper";
 
 export const MyPokemonContext = createContext();

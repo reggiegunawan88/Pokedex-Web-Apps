@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { MyPokemonContext } from "pages/Inventory";
-import Card from "./card";
+import Card from "./PokemonCard";
 
-function MyPokemonList() {
+function ListCard() {
   const myPokemon = useContext(MyPokemonContext);
 
   return (
@@ -17,4 +17,4 @@ function MyPokemonList() {
   );
 }
 
-export default MyPokemonList;
+export default ListCard;

@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext, createContext } from "react";
 import { MyPokemonContext } from "pages/Inventory";
-import Loading from "./components/loading";
-import MyPokemonList from "./components/list";
-import EmptyState from "./components/emptyState";
-import Modal from "./components/modal";
+import LoadingScreen from "../LoadingScreen";
+import ListCard from "./components/ListCard";
+import EmptyState from "../EmptyState";
+import ModalRelease from "../ModalRelease";
 
 export const ModalContext = createContext();
 
@@ -36,8 +36,8 @@ function MyPokemon() {
   }, []);
   return (
     <ModalContext.Provider value={data}>
-      <Modal />
-      <div>{loading ? <Loading /> : myPokemon.length > 0 ? <MyPokemonList /> : <EmptyState />}</div>;
+      <ModalRelease />
+      <div>{loading ? <LoadingScreen /> : myPokemon.length > 0 ? <ListCard /> : <EmptyState />}</div>;
     </ModalContext.Provider>
   );
 }

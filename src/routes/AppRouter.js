@@ -4,14 +4,14 @@ import ContentRoutes from "components/ContentRoutes";
 
 function AppRouter() {
   return (
-    <Router>
-      <div className="min-h-screen bg-blue-100">
+    <div className="min-h-screen bg-blue-100">
+      <Router>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/*" component={ContentRoutes} />
         </Switch>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

@@ -1,4 +1,4 @@
-function Loading() {
+function LoadingScreen() {
   return (
     <div className="absolute top-1/2 right-1/2 transform translate-x-1/2 -translate-y-1/2">
       <div className="flex flex-col gap-y-3 text-center">
@@ -9,4 +9,4 @@ function Loading() {
   );
 }
 
-export default Loading;
+export default LoadingScreen;

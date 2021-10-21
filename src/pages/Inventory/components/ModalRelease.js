@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ModalContext } from "components/MyPokemon";
+import { ModalContext } from "./MyPokemon";
 import { deletePokemon } from "components/utils/helper/helper";
 
 function Modal() {
