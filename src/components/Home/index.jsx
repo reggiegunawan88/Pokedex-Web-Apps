@@ -14,7 +14,7 @@ function Home() {
                 <img alt="pokedex-logo" src="/assets/pokeball-pixel.png" className="absolute pokedex-menu-img" />
               </button>
             </Link>
-            <p className="font-minecraft text-xl my-5">POKEDEX ABC</p>
+            <p className="font-minecraft text-xl my-5">POKEDEX</p>
           </div>
           <div className="flex flex-col">
             <Link to="/my-pokemon">
