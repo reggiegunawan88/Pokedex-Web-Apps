@@ -37,7 +37,7 @@ function MyPokemon() {
   return (
     <ModalContext.Provider value={data}>
       <ModalRelease />
-      {loading ? <LoadingScreen /> : myPokemon.length > 0 ? <ListCard /> : <EmptyState />};
+      {loading ? <LoadingScreen /> : myPokemon.length > 0 ? <ListCard /> : <EmptyState />}
     </ModalContext.Provider>
   );
 }
