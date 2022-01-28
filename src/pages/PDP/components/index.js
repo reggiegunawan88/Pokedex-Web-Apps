@@ -2,9 +2,9 @@ import React, { useState, createContext } from "react";
 import PokemonProfile from "./PokemonDetails/PokemonProfile";
 import PokemonAbout from "./PokemonDetails/About";
 import ButtonCatch from "./PokemonDetails/ButtonCatch";
-import SnackbarSuccess from "./Snackbar/SnackbarSuccess";
-import SnackbarFailed from "./Snackbar/SnackbarFailed";
-import ModalCatch from "./PokemonDetails/ModalCatch";
+import SnackbarSuccess from "components/Snackbar/SnackbarSuccess";
+import SnackbarFailed from "components/Snackbar/SnackbarFailed";
+import ModalCatch from "components/ModalCatch";
 
 export const userInteractionContext = createContext();
 

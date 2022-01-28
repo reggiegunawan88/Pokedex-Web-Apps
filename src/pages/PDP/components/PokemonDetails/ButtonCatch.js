@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { userInteractionContext } from "../index";
+import { userInteractionContext } from "pages/PDP/components";
 
 function CatchButton() {
   const interaction = useContext(userInteractionContext);

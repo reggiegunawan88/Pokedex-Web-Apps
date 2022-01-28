@@ -13,7 +13,7 @@ module.exports = {
         minecraft: ["Minecraft"],
       },
       backgroundImage: () => ({
-        "pokedex-bg": "url('../img/pokedex-menu-bg.png')",
+        "pokedex-bg": "url('/src/assets/img/pokedex-menu-bg.png')",
       }),
     },
     screens: {

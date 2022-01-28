@@ -1,12 +1,12 @@
 import React, { useState, useContext } from "react";
 import { PokemonListContext } from "pages/PCP";
-import LazyLoading from "components/PokemonCard/components/lazyLoading";
+import LazyLoading from "components/PokemonCard/lazyLoading";
 import PokemonCard from "components/PokemonCard";
 import "./index.css";
 
 function PokemonList() {
   const ctxValue = useContext(PokemonListContext);
-  const [itemsPerPage, setItemsPerPage] = useState(20);
+  const [itemsPerPage, setItemsPerPage] = useState(20); // show max 20 pokemons per pagination
 
   // load more btn func
   const loadMore = () => setItemsPerPage(itemsPerPage + 20);

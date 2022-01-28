@@ -1,4 +1,9 @@
 import Header from "components/Header";
+/**
+ * PCP (Product Catalog Page) => Pokedex List page
+ * PDP (Product Detail Page) => Pokemon Details page
+ * Inventory => My Pokemon page
+ */
 import PCP from "pages/PCP";
 import PDP from "pages/PDP";
 import Inventory from "pages/Inventory";
@@ -11,7 +16,7 @@ function ContentRoutes() {
       <Switch>
         <Route path="/pokedex" component={PCP} />
         <Route path="/pokemon/:name" component={PDP} />
-        <Route path="/myPokemon" component={Inventory} />
+        <Route path="/my-pokemon" component={Inventory} />
       </Switch>
     </Router>
   );

@@ -12,7 +12,7 @@ function HomeButton() {
         <p className="font-minecraft text-xl my-5">POKEDEX</p>
       </div>
       <div className="flex flex-col">
-        <Link to="/myPokemon">
+        <Link to="/my-pokemon">
           <button className="relative bg-white w-40 h-40 tablet:w-50 tablet:h-50 rounded-xl">
             <img alt="pokeball-icon" src="/assets/bag-pixel.png" className="absolute pokeball-menu-img" />
           </button>

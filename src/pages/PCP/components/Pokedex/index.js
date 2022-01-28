@@ -1,7 +1,7 @@
 import { getCaughtPokemon } from "components/utils/helper/helper";
 import React, { useEffect, useState } from "react";
-import PokedexList from "./components/PokedexList";
-import PokedexThumbnail from "./components/PokedexThumbnail";
+import PokedexList from "./PokedexList/index.js";
+import PokedexThumbnail from "./PokedexThumbnail/index.js";
 
 function Pokedex() {
   const [totalPokemon, setTotalPokemon] = useState(0);

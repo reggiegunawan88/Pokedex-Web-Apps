@@ -3,7 +3,7 @@ import { MyPokemonContext } from "pages/Inventory";
 import LoadingScreen from "../LoadingScreen";
 import ListCard from "./components/ListCard";
 import EmptyState from "../EmptyState";
-import ModalRelease from "../ModalRelease";
+import ModalRelease from "components/ModalRelease";
 
 export const ModalContext = createContext();
 

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { userInteractionContext } from "../index";
+import { userInteractionContext } from "pages/PDP/components";
 import "./index.css";
 
 function SnackbarSuccess() {
