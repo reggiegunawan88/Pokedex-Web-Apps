@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { PokemonDetailsContext } from "pages/PDP";
+import { userInteractionContext } from "pages/PDP/components";
 import { savePokemonToStorage } from "components/utils/helper/helper";
-import { userInteractionContext } from "../../index";
 import "./index.css";
 
 function Modal() {

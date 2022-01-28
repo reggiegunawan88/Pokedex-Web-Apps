@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { PokemonDetailsContext } from "pages/PDP";
-import Meterbar from "./Meterbar";
+import Meterbar from "../Meterbar";
 
 function PokemonStats() {
   const pokemonData = useContext(PokemonDetailsContext);
